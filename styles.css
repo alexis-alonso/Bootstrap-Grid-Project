@@ -1,0 +1,7 @@
+/* so that all columns have color */
+[class*='col'] {
+    padding: 1rem;
+    background-color: rgba(54, 129, 227, 0.838);
+    border: 2px solid white;
+    color: white;
+}
