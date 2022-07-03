@@ -1,5 +1,9 @@
+html,body {
+    height: 100%;
+}
+
 body {
-    background-color: rgba(13, 71, 13, 0.829);
+    background-color: rgba(21, 84, 21, 0.699);
 }
 
 /* so that all containers have color */
