@@ -1,5 +1,5 @@
 html,body {
-    height: 100%;
+    height: 100vm;
 }
 
 body {
@@ -25,4 +25,9 @@ body {
 
 [id*='filter'] {
     background-color: blue;
+}
+
+#email-list {
+    height: 100vm;
+    overflow-y: auto;
 }
