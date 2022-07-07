@@ -1,5 +1,5 @@
 html,body {
-    height: 100vm;
+    height: 100vh;
 }
 
 body {
@@ -28,6 +28,5 @@ body {
 }
 
 #email-list {
-    height: 100vm;
-    overflow-y: auto;
+    height: 100vh;
 }
