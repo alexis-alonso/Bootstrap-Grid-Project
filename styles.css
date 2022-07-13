@@ -1,32 +1,10 @@
-html,body {
-    height: 100vh;
-}
-
 body {
-    background-color: rgba(21, 84, 21, 0.699);
+
 }
 
-/* so that all containers have color */
-[class*='con'] {
-    padding: 1rem;
-    background-color: rgba(199, 212, 228, 0.838);
-    border: 2px solid white;
-    color: white;
-}
-
-
-/* so that all columns have color */
-[class*='col'] {
-    padding: 1rem;
-    background-color: rgba(54, 129, 227, 0.838);
-    border: 2px solid white;
-    color: white;
-}
-
-[id*='filter'] {
-    background-color: blue;
-}
 
 #email-list {
-    height: 100vh;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
 }

@@ -16,20 +16,14 @@
     
 </head>
 <body>
+  <div class="container">
 
-    <div class="container-fluid">
-      <div class="row vh-100">
-        <!-- SEARCH BAR! :) -->
-        <nav class="navbar bg-light">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
+    <div class="border border-3 p-2 border-light">
 
-        <div class="col-xl-2 col-md-2" id="email-filters">
+      <div class="row">
+
+        <!-- LEFT COLUMN! -->
+        <div class="col-xl-2 col-md-2 col-sm-4 p-3 bg-info border border-white" id="email-filters">
           <!-- left sidebar, made to select a filter for emails in second column -->
           <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
@@ -43,66 +37,65 @@
           </div>        
         </div>
 
-        <div class="overflow-auto col-xl-3 col-md-3"  id="email-list">
+
+        <!-- MIDDLE COLUMN! -->
+        <div class="overflow-auto col-xl-3 col-md-3 col-sm-4 bg-info border border-white">
+
+          <!-- Search bar for emails (color-scheme set)-->
+          <nav class="navbar">
+            <div class="container bg-light border my-2">
+              <form class="d-flex m-1" role="search">
+                <input class="form-control bg-light me-2 p-2 border" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success p-2" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
           <!-- Email list (middle col), based on email-filter -->
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+            <ul class="list-group mb-3 border-white" id="email-list">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
                 </div>
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Subheading</div>
-                  Content for list item
-                </div>
-                <span class="badge bg-primary rounded-pill">1</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">Subheading</div>
-                  Content for list item
-                </div>
-                <span class="badge bg-primary rounded-pill">1</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <li class="list-group-item text-bg-light d-flex justify-content-between align-items-start border border-white">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Subheading</div>
                   Content for list item
@@ -110,47 +103,40 @@
                 <span class="badge bg-primary rounded-pill">1</span>
               </li>
             </ul>
-  
-          </div>
 
         </div>
 
-        
-        <div class="col-xl-6 col-md-6">
-          <!-- New Email button (right col) -->
-          <button type="button" class="btn btn-success">New Email</button>
 
-          <!-- Sending-to fields -->
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">To: email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Cc: email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Bcc: email address</label>
-          </div>
+        <!-- RIGHT COLUMN -->
+        <div class="col-xl-7 col-md-7 col-sm-4 bg-info border border-white">
+
+          <!-- New Email button -->
+          <button type="button" class="btn btn-success my-3">New Email</button>
+
+          <!-- Sending-to-email fields -->
+          <input type="email" class="form-control border mb-2 bg-light" id="Sending-to" placeholder="To: email address">
+
+          <input type="email" class="form-control border mb-2 bg-light" id="Sending-to-cc" placeholder="Cc: email address">
+
+          <input type="email" class="form-control border mb-2 bg-light" id="Sending-to-bcc" placeholder="Bcc: email address">
 
           <!-- Email text area -->
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            <textarea class="form-control border" rows="10"></textarea>
           </div>
 
+          <!-- Send button -->
           <div class="text-center">
             <button type="submit" class="btn btn-primary">Send</button>
           </div>
 
         </div>
-
+        
       </div>
-    
     </div>
+  </div>
   
   
-  </div>  
 </body>
 </html>
